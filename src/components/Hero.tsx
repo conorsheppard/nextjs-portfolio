@@ -49,9 +49,9 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.6 }}
             className={`mb-12 max-w-xl leading-relaxed text-gray-300 ${isMobile ? 'text-base sm:text-lg' : 'text-lg sm:text-xl md:max-w-2xl'}`}
           >
-            Consultant Software Engineer specializing in cloud-native Java services. Skilled in building
-            production-ready MVP applications with a focus on testing, CI/CD, automation, and performance. Get in touch
-            for a free consultation.
+            Software Engineer specializing in cloud-native Java services. Skilled in building production-ready MVP
+            applications with a focus on testing, CI/CD, automation, and performance. Get in touch for a free
+            consultation.
           </motion.p>
           <Link href="#about" passHref>
             <motion.div

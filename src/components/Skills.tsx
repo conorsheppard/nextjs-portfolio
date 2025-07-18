@@ -31,7 +31,7 @@ const skillCategories = [
     icon: Cloud,
     gradient: 'from-amber-500 to-yellow-600',
     iconGlow: 'shadow-[0_0_24px_4px_rgba(245,158,11,0.5)]',
-    skills: ['Git', 'GitHub Actions', 'Docker', 'Kubernetes', 'EKS', 'AWS'],
+    skills: ['Docker', 'Kubernetes', 'EKS', 'AWS', 'Git', 'GitHub Actions'],
   },
   {
     name: 'Working Principles',
