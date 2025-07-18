@@ -63,7 +63,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-400">
-            A selection of projects that demonstrate my skills in backend development, distributed computing, and
+            A selection of projects that demonstrate my skills in backend development, distributed systems, and
             full-stack engineering. Each project features frameworks and technologies I've used in my day-to-day work to
             build real-world, scalable, & fault-tolerate software solutions; presented in a simple, user-friendly way.
           </p>
