@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import About from '@/components/About'
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
       <Navbar />
       <section id="hero" aria-labelledby="hero-heading">
         <Hero />
+      </section>
+      <section id="about" aria-labelledby="about-heading">
+        <About />
       </section>
     </main>
   )

@@ -32,10 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <meta
-          property="og:title"
-          content="Conor Sheppard, Consultant Software Engineer"
-        />
+        <meta property="og:title" content="Conor Sheppard, Consultant Software Engineer" />
         <meta
           property="og:description"
           content="Portfolio of Conor Sheppard, Consultant Software Engineer - specialising in backend development and cloud-native Java services."
@@ -47,15 +44,8 @@ export default function RootLayout({
           content="Portfolio of Conor Sheppard, Consultant Software Engineer - specialising in backend development and cloud-native Java services."
         />
       </Head>
-      <body suppressHydrationWarning
-        className={`${geistSans.className} bg-gray-900 text-gray-100 antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+      <body suppressHydrationWarning className={`${geistSans.className} bg-gray-900 text-gray-100 antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
         <Analytics />
