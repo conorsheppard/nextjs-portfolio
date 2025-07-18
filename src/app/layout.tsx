@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
+import { ThemeProvider } from '@/components/theme-provider'
+import { Analytics } from '@vercel/analytics/next'
+import Head from 'next/head'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,9 +30,35 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased">
-        <div suppressHydrationWarning>{children}</div>
+    <html lang="en" suppressHydrationWarning>
+      <Head>
+        <meta
+          property="og:title"
+          content="Conor Sheppard, Consultant Software Engineer"
+        />
+        <meta
+          property="og:description"
+          content="Portfolio of Conor Sheppard, Consultant Software Engineer - specialising in backend development and cloud-native Java services."
+        />
+        <meta property="og:image" content="/31444937_cropped.jpg" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          content="Portfolio of Conor Sheppard, Consultant Software Engineer - specialising in backend development and cloud-native Java services."
+        />
+      </Head>
+      <body suppressHydrationWarning
+        className={`${geistSans.className} bg-gray-900 text-gray-100 antialiased`}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
