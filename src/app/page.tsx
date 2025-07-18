@@ -1,9 +1,11 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 p-6">
+      <Navbar />
       <section className="mx-auto max-w-4xl text-center">
         <h1 className="mb-2 text-4xl font-bold">Conor Sheppard</h1>
         <p className="mb-6 text-lg text-gray-600">
