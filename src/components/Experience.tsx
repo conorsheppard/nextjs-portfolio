@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import { Briefcase, GraduationCap, BadgePoundSterling, Lock, Phone } from 'lucide-react' // Icons for different roles
+import { Badge } from '@/components/ui/badge'
+import { Briefcase, GraduationCap, BadgePoundSterling, Lock, Phone } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const experiences = [
@@ -142,7 +143,18 @@ export default function Experience() {
                   <p className="text-md mb-1 text-purple-300">
                     {exp.company} - {exp.location}
                   </p>
-                  <p className="mb-4 text-sm text-gray-400">{exp.period}</p>
+                  <div className={`mb-2 mt-1 flex flex-wrap`}>
+                    {exp.tags.map((tag) => (
+                      <Badge
+                        key={tag}
+                        variant="secondary"
+                        className="border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors hover:text-white-800"
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                  <p className="mb-2 text-sm text-gray-400">{exp.period}</p>
                 </div>
                 <ul className="list-inside list-disc space-y-2 text-sm leading-relaxed text-gray-300 marker:text-purple-400 sm:text-base">
                   {exp.details.map((detail, i) => (

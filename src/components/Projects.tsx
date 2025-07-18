@@ -97,7 +97,7 @@ export default function Projects() {
                       <Badge
                         key={tag}
                         variant="secondary"
-                        className="border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors hover:text-gray-800"
+                        className="border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors hover:text-white-800"
                       >
                         {tag}
                       </Badge>
