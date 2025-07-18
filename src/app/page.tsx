@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import Skills from '@/components/Skills'
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       </section>
       <section id="about" aria-labelledby="about-heading">
         <About />
+      </section>
+      <section id="skills" aria-labelledby="skills-heading">
+        <Skills />
       </section>
     </main>
   )

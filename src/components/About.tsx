@@ -39,9 +39,9 @@ export default function About() {
                 work cross-stack when needed (React, Next.js). I hold a 2:1 Honours degree in Computer Applications &
                 Software Engineering from Dublin City University, I am passionate about leveraging technologies like
                 Docker, Kubernetes, EKS, Redis, Kafka, and Debezium to build highly-available, fault-tolerant systems,
-                and I care a lot about Agile delivery, testing, CI/CD, automation, and performance. Currently, I work
-                as a freelance software consultant, helping businesses streamline their operations with custom tooling.
-                I also have experience leading a team, building user-facing software products and working directly with
+                and I care a lot about Agile delivery, testing, CI/CD, automation, and performance. Currently, I work as
+                a freelance software consultant, helping businesses streamline their operations with custom tooling. I
+                also have experience leading a team, building user-facing software products and working directly with
                 clients and stakeholders to oversee requirements gathering.
               </p>
             </CardContent>

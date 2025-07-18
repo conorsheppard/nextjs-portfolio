@@ -1,18 +1,13 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Analytics } from '@vercel/analytics/next'
 import Head from 'next/head'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
   subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -30,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html className={`${inter.className}`} lang="en" suppressHydrationWarning>
       <Head>
         <meta property="og:title" content="Conor Sheppard, Consultant Software Engineer" />
         <meta
@@ -44,7 +39,7 @@ export default function RootLayout({
           content="Portfolio of Conor Sheppard, Consultant Software Engineer - specialising in backend development and cloud-native Java services."
         />
       </Head>
-      <body suppressHydrationWarning className={`${geistSans.className} bg-gray-900 text-gray-100 antialiased`}>
+      <body suppressHydrationWarning className={`bg-gray-900 text-gray-100 antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
