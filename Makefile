@@ -4,7 +4,7 @@ default: run
 
 run:
 	# Development
-	npx next dev
+	npx next dev --turbo
 
 run-prod:
     # Production (after build)
