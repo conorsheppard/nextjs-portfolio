@@ -4,6 +4,9 @@ default: run
 
 run:
 	# Development
+	npx next dev
+
+run-with-turbo:
 	npx next dev --turbo
 
 build:
