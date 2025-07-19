@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, CloudDownload } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useIsMobile } from '@/hooks/use-mobile'
 
@@ -70,6 +70,24 @@ export default function Hero() {
               </Button>
             </motion.div>
           </Link>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="inline-block"
+          >
+            <Button
+              asChild
+              variant="outline"
+              size={isMobile ? 'default' : 'lg'}
+              className="group ml-4 transform rounded-lg border-2 border-gray-400 bg-transparent px-8 py-3 text-lg text-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:border-gray-500 hover:bg-gray-700/50 hover:text-white hover:shadow-gray-700/40"
+            >
+              <a href="/Conor-Sheppard-CV.pdf" download>
+                Download my CV
+                <CloudDownload className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-y-1" />
+              </a>
+            </Button>
+          </motion.div>
         </div>
       </div>
     </section>
