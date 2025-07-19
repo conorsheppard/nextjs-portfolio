@@ -1,6 +1,9 @@
 name: Lint, Format, and Type Check
 
-on: [push, pull_request]
+on:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   lint-format-typecheck:
