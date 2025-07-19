@@ -7,6 +7,7 @@ run:
 	npx next dev
 
 run-with-turbo:
+	# set package.json: "scripts": { "dev": "next dev --turbo" }
 	npx next dev --turbo
 
 build:
