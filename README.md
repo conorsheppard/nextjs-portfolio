@@ -31,3 +31,4 @@ npm run start         # Start production server
 npm run lint          # Run ESLint
 npm run format        # Format code with Prettier
 npm run format:check  # Check formatting
+```

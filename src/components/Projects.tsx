@@ -64,8 +64,9 @@ export default function Projects() {
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-400">
             A selection of projects that demonstrate my skills in backend development, distributed systems, and
-            full-stack engineering. Each project features frameworks and technologies I've used in my day-to-day work to
-            build real-world, scalable, & fault-tolerate software solutions; presented in a simple, user-friendly way.
+            full-stack engineering. Each project features frameworks and technologies I&#39;ve used in my day-to-day
+            work to build real-world, scalable, & fault-tolerate software solutions; presented in a simple,
+            user-friendly way.
           </p>
         </motion.div>
 
@@ -97,7 +98,7 @@ export default function Projects() {
                       <Badge
                         key={tag}
                         variant="secondary"
-                        className="border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors hover:text-white-800"
+                        className="hover:text-white-800 border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors"
                       >
                         {tag}
                       </Badge>

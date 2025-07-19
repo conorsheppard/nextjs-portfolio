@@ -143,12 +143,12 @@ export default function Experience() {
                   <p className="text-md mb-1 text-purple-300">
                     {exp.company} - {exp.location}
                   </p>
-                  <div className={`mb-2 mt-1 flex flex-wrap`}>
+                  <div className={`mt-1 mb-2 flex flex-wrap`}>
                     {exp.tags.map((tag) => (
                       <Badge
                         key={tag}
                         variant="secondary"
-                        className="border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors hover:text-white-800"
+                        className="hover:text-white-800 border-gray-600 bg-gray-700/60 text-xs text-gray-300 transition-colors"
                       >
                         {tag}
                       </Badge>

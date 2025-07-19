@@ -38,7 +38,7 @@ export default function Hero() {
             className={`mb-6 font-extrabold tracking-tight ${isMobile ? 'text-3xl sm:text-4xl' : 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl'}`}
             id="hero-heading"
           >
-            <span className="block">Hi, I'm</span>
+            <span className="block">Hi, I&#39;m</span>
             <span className="block bg-gradient-to-r from-slate-300 via-slate-400 to-slate-500 bg-clip-text pb-2 text-transparent">
               Conor Sheppard
             </span>

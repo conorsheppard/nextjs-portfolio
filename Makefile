@@ -6,9 +6,12 @@ run:
 	# Development
 	npx next dev --turbo
 
+build:
+	npx run build
+
 run-prod:
     # Production (after build)
-	npx next start
+	npm next start
 
 prettier:
 	npx prettier --write .

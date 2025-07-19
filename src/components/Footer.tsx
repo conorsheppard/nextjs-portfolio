@@ -35,12 +35,8 @@ export default function Footer() {
             <Mail size={24} />
           </a>
         </div>
-        <p className="text-sm">
-          &copy; {currentYear} Conor Sheppard. All rights reserved.
-        </p>
-        <p className="mt-2 text-xs">
-          Built with Next.js, Tailwind CSS, and Shadcn/UI.
-        </p>
+        <p className="text-sm">&copy; {currentYear} Conor Sheppard. All rights reserved.</p>
+        <p className="mt-2 text-xs">Built with Next.js, Tailwind CSS, and Shadcn/UI.</p>
       </div>
     </footer>
   )
