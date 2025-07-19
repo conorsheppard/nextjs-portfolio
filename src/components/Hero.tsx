@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { ArrowDown, CloudDownload } from 'lucide-react'
+import { ArrowDown, CloudDownload, Mail, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useIsMobile } from '@/hooks/use-mobile'
 
@@ -52,6 +52,23 @@ export default function Hero() {
             Software Engineer specializing in cloud-native Java services. Skilled in building production-ready MVP
             applications with a focus on testing, CI/CD, automation, and performance. Get in touch for a free
             consultation.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className={`mb-12 max-w-xl leading-relaxed text-gray-300 ${isMobile ? 'text-base sm:text-lg' : 'text-lg sm:text-base md:max-w-2xl'} flex justify-between gap-2`}
+          >
+            <span className={`flex items-center gap-2`}>
+              <MapPin className="h-3 w-3" />
+              <span>London, UK</span>
+            </span>
+            <span className={`flex items-center gap-2`}>
+              <Mail className="h-3 w-3" />
+              <a href="mailto:conorsheppardwork@gmail.com" className="hover:underline">
+                conorsheppardwork@gmail.com
+              </a>
+            </span>
           </motion.p>
           <Link href="#about" passHref>
             <motion.div
