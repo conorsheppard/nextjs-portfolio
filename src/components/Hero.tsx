@@ -57,7 +57,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className={`mb-12 max-w-xl leading-relaxed text-gray-300 ${isMobile ? 'text-base sm:text-lg' : 'text-lg sm:text-base md:max-w-2xl'} flex justify-between gap-2`}
+            className={`mb-12 max-w-xl leading-relaxed text-gray-300 ${isMobile ? 'text-sm sm:text-lg' : 'text-lg sm:text-base md:max-w-2xl'} flex justify-between gap-2`}
           >
             <span className={`flex items-center gap-2`}>
               <MapPin className="h-3 w-3" />
@@ -80,7 +80,7 @@ export default function Hero() {
               <Button
                 variant="outline"
                 size={isMobile ? 'default' : 'lg'}
-                className="group transform rounded-lg border-2 border-gray-400 bg-transparent px-8 py-3 text-lg text-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:border-gray-500 hover:bg-gray-700/50 hover:text-white hover:shadow-gray-700/40"
+                className="group mr-2 mb-2 transform rounded-lg border-2 border-gray-400 bg-transparent px-8 py-3 text-lg text-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:border-gray-500 hover:bg-gray-700/50 hover:text-white hover:shadow-gray-700/40"
               >
                 View my work
                 <ArrowDown className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-y-1" />
@@ -97,7 +97,7 @@ export default function Hero() {
               asChild
               variant="outline"
               size={isMobile ? 'default' : 'lg'}
-              className="group ml-4 transform rounded-lg border-2 border-gray-400 bg-transparent px-8 py-3 text-lg text-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:border-gray-500 hover:bg-gray-700/50 hover:text-white hover:shadow-gray-700/40"
+              className="group mb-2 transform rounded-lg border-2 border-gray-400 bg-transparent px-8 py-3 text-lg text-gray-200 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:border-gray-500 hover:bg-gray-700/50 hover:text-white hover:shadow-gray-700/40"
             >
               <a href="/conor-sheppard-cv.pdf" download>
                 Download my CV
