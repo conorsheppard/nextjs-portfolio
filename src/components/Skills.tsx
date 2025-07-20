@@ -20,7 +20,7 @@ const skillCategories = [
     skills: ['Spring Boot', 'Hibernate', 'Quarkus', 'Micronaut', 'React', 'Node.js'],
   },
   {
-    name: 'Database Stores & Message Brokers',
+    name: 'Data Stores & Message Brokers',
     icon: Database,
     gradient: 'from-emerald-500 to-green-600',
     iconGlow: 'shadow-[0_0_24px_4px_rgba(16,185,129,0.5)]',
