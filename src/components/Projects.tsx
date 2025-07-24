@@ -7,6 +7,7 @@ import { DynamicIcon } from 'lucide-react/dynamic'
 import { ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useIsMobile } from '@/hooks/use-mobile'
+import React from 'react'
 
 const projectsData = [
   {
@@ -45,6 +46,40 @@ const projectsData = [
 
 export default function Projects() {
   const isMobile = useIsMobile()
+
+  // Collapsible preview component
+  function CollapsiblePreview({ liveLink, title }: { liveLink: string, title: string }) {
+    const [open, setOpen] = React.useState(false)
+    return (
+      <div className="w-full mt-2">
+        <Button
+          variant="outline"
+          size="sm"
+          className="border-gray-600 text-gray-300 mb-2 transition-all hover:border-gray-500 hover:bg-gray-700/70 hover:text-white"
+          onClick={() => setOpen((prev) => !prev)}
+          aria-expanded={open}
+          aria-controls={`preview-${title.replace(/\s+/g, '-')}`}
+        >
+          {open ? 'Hide Live Preview' : 'Show Live Preview'}
+        </Button>
+        {open && (
+          <div
+            id={`preview-${title.replace(/\s+/g, '-')}`}
+            className="w-full border border-gray-700 rounded-lg overflow-hidden bg-black/80"
+          >
+            <iframe
+              src={liveLink}
+              title={`Live preview of ${title}`}
+              className="w-full min-h-[400px] max-h-[600px]"
+              style={{ border: 'none' }}
+              loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+            />
+          </div>
+        )}
+      </div>
+    )
+  }
 
   return (
     <section id="projects" className="bg-gray-900/80 pt-10 pb-10 backdrop-blur-lg md:pt-16 md:pb-16">
@@ -131,6 +166,10 @@ export default function Projects() {
                     </Link>
                   )}
                 </CardFooter>
+                {/* Collapsible live preview below action buttons */}
+                {project.liveLink && (
+                  <CollapsiblePreview liveLink={project.liveLink} title={project.title} />
+                )}
               </Card>
             </motion.div>
           ))}
