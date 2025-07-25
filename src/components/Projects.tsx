@@ -51,7 +51,13 @@ export default function Projects() {
   function CollapsiblePreview({ liveLink, title }: { liveLink: string, title: string }) {
     const [open, setOpen] = React.useState(false)
     return (
-      <div className="w-full mt-2">
+      <div
+      className={
+        isMobile
+          ? 'flex justify-start w-full ml-4 mt-2'
+          : 'flex justify-end w-full mr-4 mt-2'
+      } 
+      >
         <Button
           variant="outline"
           size="sm"
@@ -166,9 +172,17 @@ export default function Projects() {
                     </Link>
                   )}
                 </CardFooter>
-                {/* Collapsible live preview below action buttons */}
+                {/* Collapsible live preview below action buttons, aligned right */}
                 {project.liveLink && (
-                  <CollapsiblePreview liveLink={project.liveLink} title={project.title} />
+                  <div
+                    className={
+                      isMobile
+                        ? 'w-full pl-2 pt-2'
+                        : 'flex w-full justify-end pr-2 pt-2'
+                    }
+                  >
+                    <CollapsiblePreview liveLink={project.liveLink} title={project.title} />
+                  </div>
                 )}
               </Card>
             </motion.div>
