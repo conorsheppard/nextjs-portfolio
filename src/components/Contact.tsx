@@ -77,8 +77,8 @@ export default function Contact() {
           <p
             className={`mx-auto max-w-2xl leading-relaxed text-gray-300 ${isMobile ? 'text-base sm:text-lg' : 'text-lg sm:text-xl'}`}
           >
-            Looking for a software engineer to help with your project? Let's discuss how I can help bring your ideas to
-            life.
+            Looking for a software engineer to help with your project? Let&apos;s discuss how I can help bring your
+            ideas to life.
           </p>
         </motion.div>
 
@@ -96,7 +96,7 @@ export default function Contact() {
                   Consultation Request
                 </CardTitle>
                 <CardDescription className="text-gray-300">
-                  Tell me about your project and I'll get back to you within 24 hours for a free consultation.
+                  Tell me about your project and I&apos;ll get back to you within 24 hours for a free consultation.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -158,7 +158,7 @@ export default function Contact() {
                       className="flex items-center gap-2 rounded-lg border border-green-700 bg-green-900/20 p-3 text-green-400"
                     >
                       <CheckCircle className="h-5 w-5" />
-                      <span>Message sent successfully! I'll get back to you soon.</span>
+                      <span>Message sent successfully! I&apos;ll get back to you soon.</span>
                     </motion.div>
                   )}
 
@@ -216,7 +216,7 @@ export default function Contact() {
                 <div className="rounded-lg border border-gray-700 bg-gray-800/30 p-4">
                   <h4 className="mb-2 font-semibold text-blue-400">Free Consultation</h4>
                   <p className="text-sm text-gray-300">
-                    Let's discuss your project requirements and see if we're a good fit.
+                    Let&apos;s discuss your project requirements and see if we&apos;re a good fit.
                   </p>
                 </div>
                 <div className="rounded-lg border border-gray-700 bg-gray-800/30 p-4">
@@ -233,8 +233,8 @@ export default function Contact() {
             <div className="rounded-lg border border-gray-700 bg-gray-800/30 p-6">
               <h3 className="mb-3 text-xl font-bold">Ready to Get Started?</h3>
               <p className="mb-4 text-gray-300">
-                Fill out the form and I'll respond within 24 hours to discuss your project requirements and how I can
-                help.
+                Fill out the form and I&apos;ll respond within 24 hours to discuss your project requirements and how I
+                can help.
               </p>
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <Mail className="h-4 w-4" />
