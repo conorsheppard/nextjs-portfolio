@@ -35,14 +35,24 @@ export default function Contact() {
       // In a real implementation, you would send this to your backend
       await new Promise((resolve) => setTimeout(resolve, 1000))
 
-      // You could integrate with services like:
-      // - EmailJS for direct email sending
-      // - Formspree for form handling
-      // - Your own API endpoint
+      const response = await fetch('https://formspree.io/f/xnqwzelo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form')
+      }
 
       setSubmitStatus('success')
-      setFormData({ email: '', message: '' })
-    } catch (error) {
+      // Clear form after a brief delay to let user see the success message
+      setTimeout(() => {
+        setFormData({ email: '', message: '' })
+      }, 1000)
+    } catch {
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
