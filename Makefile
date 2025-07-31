@@ -20,5 +20,8 @@ run-prod:
 prettier:
 	npx prettier --write .
 
+lint:
+	npm run lint
+
 .SILENT:
-.PHONY: default run run-prod prettier
+.PHONY: default run run-with-turbo build run-prod prettier lint

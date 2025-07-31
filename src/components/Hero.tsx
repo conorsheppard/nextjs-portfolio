@@ -50,8 +50,13 @@ export default function Hero() {
             className={`mb-12 max-w-xl leading-relaxed text-gray-300 ${isMobile ? 'text-base sm:text-lg' : 'text-lg sm:text-xl md:max-w-2xl'}`}
           >
             Software Engineer specializing in cloud-native Java services. Skilled in building production-ready MVP
-            applications with a focus on testing, CI/CD, automation, and performance. Get in touch for a free
-            consultation.
+            applications with a focus on testing, CI/CD, automation, and performance.{' '}
+            <Link
+              href="#contact"
+              className="italic underline decoration-gray-500/60 underline-offset-4 transition-colors duration-200 hover:text-gray-100 hover:decoration-gray-400/80"
+            >
+              Get in touch for a free consultation.
+            </Link>
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -65,7 +70,10 @@ export default function Hero() {
             </span>
             <span className={`flex items-center gap-2`}>
               <Mail className="h-3 w-3" />
-              <a href="mailto:conorsheppardwork@gmail.com" className="hover:underline">
+              <a
+                href="mailto:conorsheppardwork@gmail.com"
+                className="transition-colors duration-200 hover:decoration-gray-400/60 hover:underline-offset-4"
+              >
                 conorsheppardwork@gmail.com
               </a>
             </span>

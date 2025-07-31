@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { DynamicIcon } from 'lucide-react/dynamic'
 import Image from 'next/image'
@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   return (
