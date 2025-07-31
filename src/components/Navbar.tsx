@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { DynamicIcon } from 'lucide-react/dynamic'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,6 +52,21 @@ export default function Navbar() {
           >
             <DynamicIcon name="github" size={20} />
           </a>
+          <a
+            href="https://x.com/csheppdev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 transition-colors hover:text-white"
+            aria-label="X (Twitter) Profile"
+          >
+            <Image
+              src="/assets/x-logo.svg"
+              alt="X (Twitter)"
+              width={20}
+              height={20}
+              className="transition-colors duration-300"
+            />
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -97,6 +113,21 @@ export default function Navbar() {
                 aria-label="GitHub Profile"
               >
                 <DynamicIcon name="github" size={22} />
+              </a>
+              <a
+                href="https://x.com/csheppdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 transition-colors hover:text-white"
+                aria-label="X (Twitter) Profile"
+              >
+                <Image
+                  src="/assets/x-logo.svg"
+                  alt="X (Twitter)"
+                  width={22}
+                  height={22}
+                  className="transition-colors duration-300"
+                />
               </a>
             </div>
           </div>

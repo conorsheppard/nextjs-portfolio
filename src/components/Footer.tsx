@@ -1,6 +1,7 @@
 'use client'
 import { Mail } from 'lucide-react'
 import { DynamicIcon } from 'lucide-react/dynamic'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -26,6 +27,21 @@ export default function Footer() {
             aria-label="GitHub Profile"
           >
             <DynamicIcon name="github" size={24} />
+          </a>
+          <a
+            href="https://x.com/csheppdev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 transition-colors duration-300 hover:text-white"
+            aria-label="X (Twitter) Profile"
+          >
+            <Image
+              src="/assets/x-logo.svg"
+              alt="X (Twitter)"
+              width={24}
+              height={24}
+              className="transition-colors duration-300"
+            />
           </a>
           <a
             href="mailto:conorsheppardwork@gmail.com"
