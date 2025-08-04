@@ -22,6 +22,47 @@ A modern, responsive personal portfolio and CV website built with [Next.js](http
 - **Deployment**: Vercel
 - **CI**: GitHub Actions
 
+## 🐳 Docker Development
+
+This project is containerized for easy development without requiring Node.js or npm installed locally.
+
+### Quick Start
+
+```bash
+# Start development server with Docker
+make docker-dev
+
+# Or build and start development server
+make docker-dev-build
+```
+
+### Docker Commands
+
+```bash
+# Development
+make docker-dev              # Start dev server
+make docker-dev-build        # Build and start dev server
+make docker-stop             # Stop all containers
+
+# Production
+make docker-prod             # Start production server
+make docker-prod-build       # Build and start production server
+make docker-clean            # Clean up all containers and images
+```
+
+### Manual Docker Commands
+
+```bash
+# Development
+docker-compose up nextjs-dev
+
+# Production
+docker-compose up nextjs-prod
+
+# Build and run
+docker-compose up --build nextjs-dev
+```
+
 ## 📦 Scripts
 
 ```bash
