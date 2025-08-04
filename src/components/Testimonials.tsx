@@ -22,7 +22,7 @@ const testimonials: Testimonial[] = [
     role: 'Visual Artist',
     company: 'Pacentre.org',
     content:
-      'Conor was recommended to me as a software engineer with expertise in web design and provisioning, and he exceeded all expectations. Professional, easy to work with and attentive to client brief. As someone with limited technical knowledge, I appreciated how he handled my lack of expertise with patience and positivity, keeping me informed and educated as the project developed. Thanks to Conor’s enthusiasm and clear communication, what initially felt like a daunting task became something I genuinely enjoyed. I look forward to continuing to work with Conor, both in commissioning further development work and to be taught how to self-manage aspects of the site’s ongoing maintenance. I would highly recommend Conor to anyone seeking a highly skilled and client-focused engineer.',
+      'Conor was recommended to me as a software engineer with expertise in web design and provisioning, and he exceeded all expectations. Professional, easy to work with and attentive to client brief. As someone with limited technical knowledge, I appreciated how he handled my lack of expertise with patience and positivity, keeping me informed and educated as the project developed. Thanks to Conor&apos;s enthusiasm and clear communication, what initially felt like a daunting task became something I genuinely enjoyed. I look forward to continuing to work with Conor, both in commissioning further development work and to be taught how to self-manage aspects of the site&apos;s ongoing maintenance. I would highly recommend Conor to anyone seeking a highly skilled and client-focused engineer.',
     rating: 5,
     project: 'Website provisioning',
   },
@@ -32,7 +32,7 @@ const testimonials: Testimonial[] = [
     role: 'Senior ML Engineer',
     company: 'ML & Crypto',
     content:
-      "Conor was invaluable in helping me land a senior ML role. He helped me prepare for all 5 technical interviews - including working on my mindset, what questions to ask and negotiation tips. He went above and beyond in preparing for our sessions, being encouraging and giving feedback. Couldn't recommend Conor more!",
+      'Conor was invaluable in helping me land a senior ML role. He helped me prepare for all 5 technical interviews - including working on my mindset, what questions to ask and negotiation tips. He went above and beyond in preparing for our sessions, being encouraging and giving feedback. Couldn&apos;t recommend Conor more!',
     rating: 5,
     project: 'CS tutoring & interview preparation',
   },
@@ -52,7 +52,7 @@ const testimonials: Testimonial[] = [
     role: 'Head of HR',
     company: 'Divido',
     content:
-      'It’s been my pleasure to have worked with Conor throughout my time at Divido. The Company has changed much over that time and Conor has been a constant. His work in building a credit and loan origination engine helped underpin one of the technology shifts that supported Divido’s move to servicing more Enterprise clients. But aside from his excellent work, Conor has been a great champion of culture at Divido, going out of his way to support company social activities with his creative skills and his passion for community. He will be missed at Divido but I look forward to seeing where his skills and passions take him next.',
+      'It&apos;s been my pleasure to have worked with Conor throughout my time at Divido. The Company has changed much over that time and Conor has been a constant. His work in building a credit and loan origination engine helped underpin one of the technology shifts that supported Divido&apos;s move to servicing more Enterprise clients. But aside from his excellent work, Conor has been a great champion of culture at Divido, going out of his way to support company social activities with his creative skills and his passion for community. He will be missed at Divido but I look forward to seeing where his skills and passions take him next.',
     rating: 5,
     project: 'Finance software',
   },
@@ -78,7 +78,7 @@ export default function Testimonials() {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: 'easeOut',
+        ease: 'easeOut' as const,
       },
     },
   }
@@ -105,7 +105,9 @@ export default function Testimonials() {
           >
             What People Say
           </h2>
-          <p className="mt-4 text-lg text-gray-400 md:text-xl">Feedback from colleagues and clients I've worked with</p>
+          <p className="mt-4 text-lg text-gray-400 md:text-xl">
+            Feedback from colleagues and clients I&apos;ve worked with
+          </p>
         </motion.div>
 
         <motion.div
@@ -126,7 +128,7 @@ export default function Testimonials() {
 
                   <blockquote className="mb-6 flex-1 text-gray-300">
                     <p className={`leading-relaxed ${isMobile ? 'text-sm' : 'text-base md:text-lg'}`}>
-                      "{testimonial.content}"
+                      &quot;{testimonial.content}&quot;
                     </p>
                   </blockquote>
 
